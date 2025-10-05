@@ -1,6 +1,8 @@
 -- View all outbound shares
 SHOW SHARES;
 
+DESC SHARE SALES_SHARE;
+
 -- View share usage by consumers
 SELECT * FROM SNOWFLAKE.ACCOUNT_USAGE.DATA_TRANSFER_HISTORY
 WHERE TARGET_CLOUD = 'SHARE';

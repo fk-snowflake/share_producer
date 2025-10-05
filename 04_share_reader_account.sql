@@ -5,7 +5,7 @@ CREATE MANAGED ACCOUNT READER_ANALYTICS
     TYPE = READER;
 
 -- Add reader account to share
-ALTER SHARE SALES_SHARE ADD ACCOUNTS = READER_ANALYTICS;
+ALTER SHARE SALES_SHARE ADD ACCOUNTS = zlmnhtd.READER_ANALYTICS;
 
 -- Note: Reader accounts don't have compute resources
 -- Provider must create virtual warehouse for them
