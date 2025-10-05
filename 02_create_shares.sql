@@ -1,16 +1,12 @@
 USE WAREHOUSE SHARE_WH;
 
-create share SALES_SHARE;
+CREATE SHARE SALES_SHARE;
 
-grant usage on database sales_data to share sales_share;
+GRANT USAGE ON DATABASE SALES_DATA TO SHARE SALES_SHARE;
 
-grant usage on schema sales_data.public to share sales_share;
+GRANT USAGE ON SCHEMA SALES_DATA.PUBLIC TO SHARE SALES_SHARE;
 
-grant select on table sales_data.public.customer_orders to share sales_share;
+GRANT SELECT ON TABLE SALES_DATA.PUBLIC.CUSTOMER_ORDERS TO SHARE SALES_SHARE;
 
-alter share sales_share add accounts = zlmnhtd.fits;
-
-show grants  to share sales_share;
-
-desc share sales_share;
+ALTER SHARE SALES_SHARE ADD ACCOUNTS = ZLMNHTD.FITS;
 
